@@ -25,15 +25,61 @@ buttonEl.addEventListener('click', function(e) {
             response.json().then(function(data) {
               console.log("define query return variables", response.url);
               console.log(data.results);
-            });
-          })
-          .catch(function(err) {
-            console.log("Fetch Error :-S", err);
-          });
-        }
 
-    fetchGET(url); /*finally!!!! this works and this aligns with what I first learned about functions.*/
-  });
+              let recipeArray = data.results[i];
+              console.log(recipeArray);
+
+
+
+              // let recipes = `
+              // for (let i=0; i<recipeArray.length; i++){
+              //   <div>
+              //       <div class="image">
+              //         <img src=${recipeArray[i].thumbnail}</img>
+              //       <div>
+              //       <div class="title">${recipeArray[i].title}</div>
+              //       <div class="link">${recipeArray[i].href}</div>
+              //   </div>
+              // }`;
+            })
+        })
+      }
+        fetchGET(url); /*finally!!!! this works and this aligns with what I first learned about functions.*/
+
+      .catch(function(err) {
+        console.log("Fetch Error :-S", err);
+      });
+);
+
+
+
+
+
+
+
+
+
+
+  //
+  // const template = `
+  //   <article>
+  //     <h2>${blogPost.title}</h2>
+  //     <div class="meta">
+  //       <span class="date">Written on ${blogPost.meta.date}</span>
+  //     </div>
+  //     <div class="post">
+  //       <img src="${blogPost.post.image}">
+  //       ${blogPost.post.content}
+  //     </div>
+  //     <div class="site">
+  //       Part of this content was pulled from <a href="${blogPost.site.url}">${blogPost.site.name}</a>
+  //     </div>
+  //   </article>
+  // `;
+  //
+  // // Insert the template onto our page
+  // document.querySelector('.container').innerHTML = template
+  //
 
 // console.log(search_termVal);
 
