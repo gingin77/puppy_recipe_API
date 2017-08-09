@@ -7,7 +7,7 @@ buttonEl.addEventListener('click', function(e) {
     // var nameVal = nameInput.value;
     // var emailVal = emailInput.value;
     if (search_termVal) {
-      alert("Wait a second and we'll help you fill in your grocery list");
+      alert("Wait a second and we'll help you decide what's for dinner");
       searchInputEl.value = "";
     }
     console.log(search_termVal);
@@ -54,3 +54,18 @@ buttonEl.addEventListener('click', function(e) {
 //
 // recipe_options_container.innerHTML = markup;
 // console.log(markup);
+
+
+
+
+
+
+// // <!-- I got a lot of errors when I wasn't sure what form action and method attributes I should be using. Finally, I went back to the form lesson and saw that I could leave both blank.
+//
+//
+// When form action="welcome.php" and method="get", I got erros:
+// Resource interpreted as Document but transferred with MIME type text/php: "file:///Users/ginniehench/Desktop/Dev-local/Week_4/puppy_recipe_API/welcome.php?q=kale".
+// //
+// // Next, I deleted the welcome.php and got: GET file:///Users/ginniehench/Desktop/Dev-local/Week_4/puppy_recipe_API/welcome.php?q=chicken net::ERR_FILE_NOT_FOUND
+// //
+// // Change file back to what it was at the start....-->
