@@ -17,7 +17,8 @@ buttonEl.addEventListener('click', function(e) {
 
     function fetchGET(url) {
       fetch(url)
-        .then(function(response) {
+        .then(
+          function(response) {
             if (response.status !== 200) {
               console.log(response.status);
               return;
@@ -28,9 +29,6 @@ buttonEl.addEventListener('click', function(e) {
 
               let recipeArray = data.results[i];
               console.log(recipeArray);
-
-
-
               // let recipes = `
               // for (let i=0; i<recipeArray.length; i++){
               //   <div>
@@ -46,10 +44,10 @@ buttonEl.addEventListener('click', function(e) {
       }
         fetchGET(url); /*finally!!!! this works and this aligns with what I first learned about functions.*/
 
-      .catch(function(err) {
-        console.log("Fetch Error :-S", err);
-      });
-);
+      // .catch(function(err) {
+      //   console.log("Fetch Error :-S", err);
+      // });
+
 
 
 
