@@ -15,9 +15,9 @@
  	</head>
  	<body>
     <h1>Your puppy's favorite recipes</h1>
-    <form action="welcome.php" method="post">
+    <form action="welcome.php" method="get">
          <label for="search_field">What's in your fridge?</label>
-         <input type="search" name="search" id="search_field" placeholder="List your ingredients..." autocomplete="on" size="30">
+         <input type="search" name="q" id="search_field" placeholder="List your ingredients..." autocomplete="on" size="30">
          <button type="button" id="search_now">Search!</button>
     </form>
     <div id="recipe_options">
